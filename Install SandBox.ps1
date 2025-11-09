@@ -1,1 +1,1 @@
-Enable-WindowsOptionalFeature -Online -FeatureName "Containers-DisposableClientVM" -All
+Start-Process powershell.exe -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"& {Enable-WindowsOptionalFeature -Online -FeatureName Containers-DisposableClientVM -All}`""
